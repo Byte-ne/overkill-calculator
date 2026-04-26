@@ -1,0 +1,113 @@
+.graphing-panel {
+    max-width: 800px;
+    width: 100%;
+}
+
+.graph-controls {
+    margin-bottom: 20px;
+}
+
+.expression-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.expression-preview {
+    padding: 10px;
+    border: 1px solid var(--border);
+    background: var(--panel-2);
+    color: var(--text);
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.expression-preview .katex {
+    font-size: 1.2em;
+    color: var(--text);
+}
+
+.expression-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    font-size: 1rem;
+    background: var(--panel-2);
+    color: var(--text);
+}
+
+.range-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.range-input {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.range-input input {
+    padding: 5px;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    background: var(--panel-2);
+    color: var(--text);
+}
+
+.range-controls button {
+    padding: 8px 16px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    cursor: pointer;
+    grid-column: span 2;
+    justify-self: center;
+}
+
+.range-controls button:hover {
+    background: var(--panel-2);
+}
+
+.graph-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.graph-svg {
+    border: 1px solid var(--border);
+    border-radius: 0;
+    background: var(--panel);
+}
+
+.graph-examples h4 {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.examples-list {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.examples-list button {
+    padding: 4px 8px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.examples-list button:hover {
+    background: var(--panel-2);
+}

@@ -1,0 +1,59 @@
+.history-panel {
+    width: 100%;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.clear-history-button {
+    padding: 4px 8px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.clear-history-button:hover {
+    background: var(--panel-2);
+}
+
+.history-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.history-entry {
+    flex: 1;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.copy-history-button {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    cursor: pointer;
+    margin-left: 5px;
+    color: var(--text);
+    padding: 2px 6px;
+}
+
+.no-history {
+    text-align: center;
+    color: var(--muted);
+    padding: 20px;
+}

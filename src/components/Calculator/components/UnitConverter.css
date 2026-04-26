@@ -1,0 +1,75 @@
+.unit-converter {
+    width: 100%;
+}
+
+.category-selector {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.category-button {
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+.category-button:hover,
+.category-button.active {
+    background: var(--panel-2);
+}
+
+.category-button.active {
+    background: var(--accent);
+    color: #0b0d10;
+    border-color: var(--accent);
+}
+
+.converter-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    background: var(--panel-2);
+    color: var(--text);
+}
+
+.input-group select {
+    padding: 5px;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    background: var(--panel-2);
+    color: var(--text);
+}
+
+.swap-button {
+    align-self: center;
+    padding: 5px 10px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.swap-button:hover {
+    background: var(--panel-2);
+}

@@ -1,0 +1,78 @@
+.programming-panel {
+    max-width: 600px;
+    width: 100%;
+}
+
+.number-systems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.number-system {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.number-system label {
+    font-weight: bold;
+    color: var(--text);
+}
+
+.number-system input {
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 0;
+    font-family: monospace;
+    background: var(--panel-2);
+    color: var(--text);
+}
+
+.bitwise-operations {
+    margin-bottom: 20px;
+}
+
+.operation-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.operation-buttons button {
+    padding: 8px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.operation-buttons button:hover {
+    background: var(--panel-2);
+}
+
+.programming-info {
+    background: var(--panel);
+    padding: 15px;
+    border-radius: 0;
+    border: 1px solid var(--border);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.info-item {
+    background: var(--panel-2);
+    padding: 10px;
+    border-radius: 0;
+    border-left: 2px solid var(--border);
+    color: var(--text);
+}
